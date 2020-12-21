@@ -1,0 +1,3 @@
+ID,Name,Preis,Gewicht,Stueckzahl,Ferfuegbarkeit
+1,tesla,2000,300,2,jetz
+2,honda,30000,234,4,morgen
