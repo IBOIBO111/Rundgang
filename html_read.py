@@ -62,9 +62,11 @@ def read_html(filedir,OutDir):
             tEinheiten[index] = str(round(float(tEinheiten[index])/1000.0,2))
         elif 'l' in tEinheiten[index]:
             tEinheiten[index] = tEinheiten[index].replace('l','')
+        elif 'St' in tEinheiten[index]:
+            tEinheiten[index] = tEinheiten[index].replace('St', '')
 
     #Table nach Lagern Gruppieren
-    LagerBolm = ['Bolm','Rulle','Birte']
+    LagerBolm = ['Bolm','WG Rulle']
     LagerBolmDict = {}
     for iLager in LagerBolm:
         LagerBolmDict[iLager] = tables[0].loc[tables[0]['Bestellgruppe'] == iLager]
