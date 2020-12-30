@@ -66,7 +66,7 @@ def read_html(filedir,OutDir):
             tEinheiten[index] = tEinheiten[index].replace('St', '')
 
     #Table nach Lagern Gruppieren
-    LagerBolm = ['Bolm','WG Rulle']
+    LagerBolm = ['Bolm','WG Rulle','Valentin']
     LagerBolmDict = {}
     for iLager in LagerBolm:
         LagerBolmDict[iLager] = tables[0].loc[tables[0]['Bestellgruppe'] == iLager]
